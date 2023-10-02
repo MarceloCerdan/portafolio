@@ -1,0 +1,24 @@
+.sobreMi {
+    background-color: #e4eaf7;
+
+}
+
+.sobreMi__descripcion {
+    width: 50%;
+}
+
+.sobreMi__titulo {
+    display: inline-block;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 5px;
+}
+
+.sobreMi__parrafo {
+    padding: 10px 0 10px 0;
+}
+
+@media(max-width:768px) {
+    .sobreMi__descripcion {
+        width: 100%
+    }
+}

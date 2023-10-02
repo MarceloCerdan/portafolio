@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.global{
+    padding: 4rem 0;
+}
+
+.container{
+    width: 80vw;
+    margin: auto;
+}
+
+.inicio__arrow {
+    position: sticky;
+    bottom: 5px;
+    width: 2rem;
+    left: 97%;
+    cursor: pointer;
+    background-color: #00161C;
+    border-radius: 5px;
+}
+
+@media(max-width:768px){
+    .container {
+        width:calc(100% - 4rem);
+        margin: auto;
+    }
+}
+
+@media(max-width:468px){
+    .container {
+        width: 90vw;
+        margin: auto;
+    }
+
+    .inicio__arrow{
+        bottom: 1rem;
+    }
+
+}

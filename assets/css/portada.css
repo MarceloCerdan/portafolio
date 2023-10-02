@@ -1,0 +1,144 @@
+.portada {
+    background-color: #00161C;
+    display: flex;
+    height:100vh;
+    color: #ffffff;
+}
+
+.portada__portada {
+    background-image: linear-gradient(rgba(12, 12, 12, 0), rgba(0, 0, 0, 0.85)100%), url("../img/imagen-principal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.portada__container {
+    width: 73%;
+    font-weight: 700;
+    margin: 0 auto 3rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.hamburguer{
+    width:1.5rem;
+    position:fixed;
+    top:10px;
+    left: 10px;
+    cursor: pointer;
+    background-color: #1ed760;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px #00000050;
+}
+
+.portada__container-nombre{
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+}
+
+.portada__perfil {
+    width: 30%;
+    height: 100%;
+}
+
+.perfil__container {
+    display: flex;
+    padding: 3rem 0;
+    height: calc(100% - 6rem);
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.perfil__imagen {
+    align-self: center;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.perfil__datos-item{
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    text-align: center;
+}
+
+.perfil__datos-link{
+    text-decoration: none;
+    color:#ffffff;
+}
+
+.perfil__datos-link:hover{
+    color: #D4AF37;
+}
+
+.perfil__social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.perfil__social-icon{
+    background-color: #00161C;
+    border-radius: 3px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+@media(max-width:768px){
+    .portada{
+        background-color: #ffffff;
+        color: #000000;
+        height: 50vh;
+        align-items: center;
+    }
+    .portada__portada {
+        background-image:none;
+        justify-content:center;
+        width: 60%;
+    }
+
+    .portada__container-nombre {
+        font-size: 1.5rem;
+    }
+
+    .portada__perfil{
+        flex-grow: 1;
+    }
+
+    .perfil__container{
+        padding-top: 2.5rem;
+    }
+
+    .perfil__datos-link {
+
+        color: #000000;
+    }
+
+}
+
+@media(max-width:468px){
+    .portada{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .portada__portada{
+        width: 100%;
+        padding-top: 2.5rem;
+    }
+
+    .portada__container{
+        text-align: center;
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .perfil__datos{
+        padding: 1.5rem 0;
+    }
+
+}
